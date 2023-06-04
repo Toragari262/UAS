@@ -1,44 +1,41 @@
-const int ledPins[8] = {2, 3, 4, 5, 6, 7, 8, 9}; // Pin LED yang terhubung
+const int ledPins[8] = {2, 3, 4, 5, 6, 7, 8, 9};
 bool running = false;
 
 void setup() {
   for (int i = 0; i < 8; i++) {
-    pinMode(ledPins[i], OUTPUT); // Mengatur pin LED sebagai OUTPUT
+    pinMode(ledPins[i], OUTPUT);
   }
 
-  Serial.begin(9600); // Mengaktifkan komunikasi serial untuk menerima input
+  Serial.begin(9600);
 }
 
 void loop() {
   if (Serial.available()) {
-    char input = Serial.read(); // Membaca karakter dari Serial Monitor
-
-    // Mematikan semua lampu
+    char input = Serial.read();
+    
     for (int i = 0; i < 8; i++) {
       digitalWrite(ledPins[i], LOW);
     }
 
     if (input == 'A') {
-      int decimalNumber = 243; // Nilai desimal 'A' dalam ASCII
-
-      // Konversi desimal ke biner
+      int decimalNumber = 243;
+      
       String binaryNumber = "";
-      int tempNumber = decimalNumber; // Simpan angka desimal sementara untuk diubah
+      int tempNumber = decimalNumber;
       for (int i = 0; i < 8; i++) {
         if (tempNumber % 2 == 1) {
-          binaryNumber = "1" + binaryNumber; // Menambahkan digit biner 1 di depan
+          binaryNumber = "1" + binaryNumber; 
         } else {
-          binaryNumber = "0" + binaryNumber; // Menambahkan digit biner 0 di depan
+          binaryNumber = "0" + binaryNumber;
         }
-        tempNumber /= 2; // Bagi angka desimal dengan 2
+        tempNumber /= 2;
       }
 
-      // Mengontrol LED berdasarkan hasil konversi biner
       for (int i = 0; i < 8; i++) {
         if (binaryNumber.charAt(i) == '1') {
-          digitalWrite(ledPins[i], HIGH); // Menghidupkan LED
+          digitalWrite(ledPins[i], HIGH); 
         } else {
-          digitalWrite(ledPins[i], LOW); // Mematikan LED
+          digitalWrite(ledPins[i], LOW); 
         }
       }
       running = false;
