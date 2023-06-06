@@ -1,0 +1,11 @@
+c:\users\shureddokuma\documents\visual studio 2015\Projects\UAS\UAS\bin\Debug\UAS.exe.config
+c:\users\shureddokuma\documents\visual studio 2015\Projects\UAS\UAS\bin\Debug\UAS.exe
+c:\users\shureddokuma\documents\visual studio 2015\Projects\UAS\UAS\bin\Debug\UAS.pdb
+c:\users\shureddokuma\documents\visual studio 2015\Projects\UAS\UAS\bin\Debug\UAS.xml
+c:\users\shureddokuma\documents\visual studio 2015\Projects\UAS\UAS\obj\Debug\UAS.vbprojResolveAssemblyReference.cache
+c:\users\shureddokuma\documents\visual studio 2015\Projects\UAS\UAS\obj\Debug\UAS.Form1.resources
+c:\users\shureddokuma\documents\visual studio 2015\Projects\UAS\UAS\obj\Debug\UAS.Resources.resources
+c:\users\shureddokuma\documents\visual studio 2015\Projects\UAS\UAS\obj\Debug\UAS.vbproj.GenerateResource.Cache
+c:\users\shureddokuma\documents\visual studio 2015\Projects\UAS\UAS\obj\Debug\UAS.exe
+c:\users\shureddokuma\documents\visual studio 2015\Projects\UAS\UAS\obj\Debug\UAS.xml
+c:\users\shureddokuma\documents\visual studio 2015\Projects\UAS\UAS\obj\Debug\UAS.pdb
